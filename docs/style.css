@@ -3,5 +3,98 @@
 
 body {
     font-family: "Raleway", sans-serif;
-    color: tomato;
+    margin: auto;
+    color: #000839;
+    text-align: center;
+    background-color: #F5F5F5;
+
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.wrapper {
+    margin: auto;
+    padding: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: "Barlow Condensed", sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+main {
+    margin-top: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: 3px solid #9929EA;
+    outline-offset: 0.7rem;    
+}
+
+.projects {
+    display: grid;
+    gap: 1rem;
+}
+
+.project-card {
+    border-radius: 1.5rem;
+    border: 2px solid #9DDFD3;
+    padding: 1rem;
+    list-style-type: none;
+}
+
+.project-card:hover {
+    border: 2px solid #FFA41B;
+    background-color: #FFA41B;
+    cursor: pointer;
+}
+
+.project-card a {
+    color: #000839;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 600px) {
+    .wrapper {
+        max-width: 80%;
+    }
+
+    main p {
+        margin-bottom: 2rem;
+    }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .wrapper {
+        max-width: 70%;
+    }
+
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
